@@ -8,7 +8,7 @@ In the notebook are present two implementations: "Direct Forecasting" and "AutoR
 ## Dataset 
 
 <p align="left">
-  <img src="images/dataset.png" width="400">
+  <img src="images/dataset.png" width="600">
 </p>
 
 ## Split
@@ -16,7 +16,7 @@ In the notebook are present two implementations: "Direct Forecasting" and "AutoR
 From assignment we need to predict next 864 values of time series. So we split and create a test set of that quantity.
 
 <p align="left">
-  <img src="images/train_test.png" width="400">
+  <img src="images/train_test.png" width="600">
 </p>
 
 ## Model
@@ -24,7 +24,7 @@ From assignment we need to predict next 864 values of time series. So we split a
 We put in parallel 3 Gru model and we average their prediction.
 
 <p align="left">
-  <img src="images/time_series_model.png" width="400">
+  <img src="images/time_series_model.png" width="600">
 </p>
 
 The metric used to evaluate models and place the Teams in Leaderboard is the Root Mean Squared Error (RMSE). 
@@ -38,16 +38,16 @@ RMSE = 3.9455
 We use Adam optimizer, reduce learning rate on plateau and early stopping to stop the training and restore best weights to avoid overfitting.
 
 <p align="left">
-  <img src="images/training.png" width="400">
+  <img src="images/training.png" width="600">
 </p>
 
 ## Prediction
 
 <p align="left">
-  <img src="images/prediction.png" width="400">
+  <img src="images/prediction.png" width="600">
 </p>
 
 <p align="left">
-  <img src="images/prediction_with_boundary.png" width="400">
+  <img src="images/prediction_with_boundary.png" width="600">
 </p>
 
