@@ -3,6 +3,8 @@
 The goal is to design a Neural Network able to forecast a multivariate time series composed of 7 different components.
 Time Series Forecasting of what? Dataset have features with casual name to avoid use of external data.
 
+In the notebook are present two implementations: "Direct Forecasting" and "AutoRegressive Forecasting"
+
 ## Dataset 
 
 <p align="left">
@@ -27,7 +29,7 @@ We put in parallel 3 Gru model and we average their prediction.
 
 The metric used to evaluate models and place the Teams in Leaderboard is the Root Mean Squared Error (RMSE). 
 
-Performance:
+Performance of AutoRegressive implementation:
 
 RMSE = 3.9455
 
@@ -48,5 +50,4 @@ We use Adam optimizer, reduce learning rate on plateau and early stopping to sto
 <p align="left">
   <img src="images/prediction_with_boundary.png" width="400">
 </p>
-
 
